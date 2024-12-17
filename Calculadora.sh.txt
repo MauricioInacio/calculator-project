@@ -1,0 +1,42 @@
+#!/bin/bash 
+
+print('Vamos fazer conta?')
+operacao = 1
+#OperaÃ§Ã£o#
+while operacao != '0':
+
+  #Segundo escolher qual operaÃ§Ã£o serÃ¡ realizada#
+  print('Qual operaÃ§Ã£o vocÃª quer realizar? [1] Soma [2] SubtraÃ§Ã£o [3] DivisÃ£o [4] MultiplicaÃ§Ã£o [0] Encerrar o programa')
+  operacao = input()
+  if operacao == '0':
+    break
+  if operacao != '0'and operacao != '1'and operacao != '2'and operacao != '3'and operacao != '4':
+      print('Por favor digite um nÃºmero entre 0 e 4')
+      input(operacao)
+
+
+  #Primeiro passo pegar o primeiro nÃºmero#
+  print('Digite o valor:')
+  primeiro = int(input())
+
+
+  #Terceiro escolher o segundo nÃºemero#
+  print('Qual o prÃ³ximo valor?')
+  segundo = int(input())
+
+
+  if operacao == '1':
+      total = primeiro + segundo
+      print(total)
+
+  elif operacao == '2':
+      total = primeiro - segundo
+      print(total)
+
+  elif operacao == '3':
+      total = primeiro / segundo
+      print(total)
+
+  elif operacao == '4':
+      total = primeiro * segundo
+      print(total)
